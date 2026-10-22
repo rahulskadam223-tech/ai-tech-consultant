@@ -1,0 +1,19 @@
+services:
+  task1-knowledge-brain:
+    build:
+      context: .
+      dockerfile: task1-knowledge-brain/Dockerfile
+    env_file: .env
+    environment:
+      DATA_DIR: /data
+      PROMPTS_DIR: /app/prompts/v1
+    ports:
+      - "8001:8001"
+    volumes:
+      - task1-data:/data
+
+  # task2-inbox-agent and task3-meeting-to-scope are added later.
+  # They talk to task1 at http://task1-knowledge-brain:8001 (TASK1_URL).
+
+volumes:
+  task1-data:

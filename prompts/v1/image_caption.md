@@ -1,0 +1,1 @@
+This screenshot comes from the support article "{title}". In one or two sentences, describe what the screenshot shows: which screen or settings page it is, and what buttons, fields, or menu items are visible. Be concrete and brief. Do not start with "The screenshot shows".
