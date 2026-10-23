@@ -122,7 +122,7 @@ class Database:
     async def pending_images(self, limit: int, max_attempts: int) -> list[dict[str, Any]]:
         return await self._rows(
             "SELECT i.*, p.title AS article_title FROM images i JOIN pages p ON p.url = i.article_url "
-            "WHERE i.status = 'pending' AND i.attempts < ? AND p.status = 'done' ORDER BY i.rowid LIMIT ?",
+            "WHERE i.status IN ('pending', 'failed') AND i.attempts < ? AND p.status = 'done' ORDER BY i.rowid LIMIT ?",
             (max_attempts, limit),
         )
 

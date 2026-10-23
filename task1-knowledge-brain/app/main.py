@@ -10,6 +10,7 @@ from fastapi import FastAPI, HTTPException, Request
 from pydantic import BaseModel, Field
 
 from .chunker import Chunk, make_chunk_id
+from .claude_client import provider_name
 from .ingest import run_refresh
 from .services import Services, build_services
 
@@ -63,6 +64,7 @@ def create_app(services: Services | None = None) -> FastAPI:
             "pages_done": await svc.db.count_pages("done"),
             "pages_pending": await svc.db.count_pages("pending"),
             "chunks": svc.store.count(),
+            "provider": provider_name(),
             "answer_model": svc.settings.answer_model,
             "caption_model": svc.settings.caption_model,
         }

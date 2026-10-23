@@ -25,9 +25,9 @@ async def caption_images(svc: Services, counts: CrawlCounts) -> None:
             await svc.db.set_image_result(img["url"], "done", caption)
             counts.captioned += 1
         except Exception as e:  # noqa: BLE001
-            log.warning("caption failed %s: %s", img["url"], e)
+            log.warning("caption failed %s: %s: %s", img["url"], type(e).__name__, e)
             await svc.db.set_image_result(img["url"], "failed", None)
-            counts.errors.append(f"image {img['url']}: {e}")
+            counts.errors.append(f"image {img['url']}: {type(e).__name__}: {e}")
         await svc.db.commit()
 
 
