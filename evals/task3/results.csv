@@ -1,0 +1,41 @@
+check,model,pass,latency_ms,cost_usd
+A1 at least 5 requirements extracted,claude-sonnet-4-5,True,181837,0.01182
+A2 location filter requirement found,claude-sonnet-4-5,True,181837,0.01182
+A3 price filter requirement found,claude-sonnet-4-5,True,181837,0.01182
+A4 mobile view requirement found,claude-sonnet-4-5,True,181837,0.01182
+A5 AI search requirement found and marked unclear,claude-sonnet-4-5,True,181837,0.01182
+A6 deadline constraint captured (6 weeks),claude-sonnet-4-5,True,181837,0.01182
+A7 location filter is existing_setting or partial,claude-sonnet-4-5,False,181837,0.01182
+A8 AI search is custom_dev or needs_clarification,claude-sonnet-4-5,True,181837,0.01182
+A9 every requirement has a feasibility entry,claude-sonnet-4-5,True,181837,0.01182
+A10 scope has exclusions and acceptance criteria,claude-sonnet-4-5,True,181837,0.01182
+A11 estimate tasks have low <= likely <= high,claude-sonnet-4-5,True,181837,0.01182
+A12 existing_setting items cost at most 1h config,claude-sonnet-4-5,True,181837,0.01182
+A13 every custom_dev item has 2+ tasks,claude-sonnet-4-5,True,181837,0.01182
+A14 proposal has no unverified promise,claude-sonnet-4-5,True,181837,0.01182
+A15 proposal states currency and the Items To Confirm section,claude-sonnet-4-5,True,181837,0.01182
+C1 saved-search alert detected as ADDED,claude-sonnet-4-5,True,185300,0.05526
+C2 AI search detected as REMOVED,claude-sonnet-4-5,True,185300,0.05526
+C3 deadline change 6 -> 4 weeks detected,claude-sonnet-4-5,True,185300,0.05526
+C4 logo redesign flagged OUT OF SCOPE,claude-sonnet-4-5,True,185300,0.05526
+C5 unchanged items keep their baseline estimate (only affected re-estimated),claude-sonnet-4-5,True,185300,0.05526
+A1 at least 5 requirements extracted,claude-haiku-4-5,True,165245,0.01107
+A2 location filter requirement found,claude-haiku-4-5,True,165245,0.01107
+A3 price filter requirement found,claude-haiku-4-5,True,165245,0.01107
+A4 mobile view requirement found,claude-haiku-4-5,True,165245,0.01107
+A5 AI search requirement found and marked unclear,claude-haiku-4-5,True,165245,0.01107
+A6 deadline constraint captured (6 weeks),claude-haiku-4-5,True,165245,0.01107
+A7 location filter is existing_setting or partial,claude-haiku-4-5,True,165245,0.01107
+A8 AI search is custom_dev or needs_clarification,claude-haiku-4-5,True,165245,0.01107
+A9 every requirement has a feasibility entry,claude-haiku-4-5,True,165245,0.01107
+A10 scope has exclusions and acceptance criteria,claude-haiku-4-5,True,165245,0.01107
+A11 estimate tasks have low <= likely <= high,claude-haiku-4-5,True,165245,0.01107
+A12 existing_setting items cost at most 1h config,claude-haiku-4-5,True,165245,0.01107
+A13 every custom_dev item has 2+ tasks,claude-haiku-4-5,True,165245,0.01107
+A14 proposal has no unverified promise,claude-haiku-4-5,True,165245,0.01107
+A15 proposal states currency and the Items To Confirm section,claude-haiku-4-5,True,165245,0.01107
+C1 saved-search alert detected as ADDED,claude-haiku-4-5,True,140597,0.02874
+C2 AI search detected as REMOVED,claude-haiku-4-5,True,140597,0.02874
+C3 deadline change 6 -> 4 weeks detected,claude-haiku-4-5,True,140597,0.02874
+C4 logo redesign flagged OUT OF SCOPE,claude-haiku-4-5,False,140597,0.02874
+C5 unchanged items keep their baseline estimate (only affected re-estimated),claude-haiku-4-5,True,140597,0.02874

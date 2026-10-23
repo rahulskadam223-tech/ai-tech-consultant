@@ -3,7 +3,6 @@
 __pycache__/
 *.pyc
 .pytest_cache/
-evals/*/results.csv
 # generated data only; hand-written inputs (emails.json, transcripts/) stay tracked
 task1-knowledge-brain/data/
 *.sqlite
