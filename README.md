@@ -6,8 +6,8 @@ Three small Python 3.11 services sharing one `.env` and versioned prompts in `pr
 |---|---|---|
 | `task1-knowledge-brain/` | FastAPI RAG over the Brilliant Directories support docs (SQLite + Chroma + Claude) | done |
 | `task2-inbox-agent/` | Inbox agent calling Task 1 over HTTP, Streamlit review UI on :8502 | done |
-| `task3-meeting-to-scope/` | 5 agents turning meeting notes into a scope, Streamlit UI | todo |
-| `evals/` | One script per task, each writes `evals/<task>/results.csv` | task1 |
+| `task3-meeting-to-scope/` | 5 agents: transcript -> requirements -> feasibility (via Task 1) -> scope -> estimate -> proposal, change reports on follow-ups, Streamlit UI on :8503 | done |
+| `evals/` | One script per task, each writes `evals/<task>/results.csv` | done |
 
 ## Quick start
 
@@ -15,10 +15,11 @@ Three small Python 3.11 services sharing one `.env` and versioned prompts in `pr
 cp .env.example .env            # add ANTHROPIC_API_KEY, or AWS_BEARER_TOKEN_BEDROCK + AWS_REGION for Bedrock
 make setup                      # venv + deps for task1
 make ingest                     # crawl MAX_PAGES, embed, caption MAX_IMAGES screenshots (resumable)
-make run                        # task1 on :8001 and task2 UI on :8502 (or run-task1 / run-task2)
+make run                        # task1 :8001, task2 UI :8502, task3 UI :8503 (or run-taskN)
 make test                       # pytest
 make eval                       # evals/eval_task1.py -> evals/task1/results.csv
 make eval-task2                 # classify 40 emails with haiku+sonnet -> evals/task2/results.csv
+make eval-task3                 # 20 checks on meeting_a + meeting_c, analyst sonnet vs haiku -> evals/task3/results.csv
 ```
 
 Task 1 endpoints: `POST /query`, `POST /escalations`, `POST /escalations/{id}/resolve`,
