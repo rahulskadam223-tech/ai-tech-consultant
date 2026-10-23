@@ -1,0 +1,89 @@
+Follow-up call - Sunrise Property Listings
+Attendees: Ravi (client, Sunrise Property Listings), Sam (consultant), Dana (project manager)
+Recorded 2026-10-20 (two weeks after discovery call)
+
+[00:00:02] Dana: Okay we're recording. Ravi, thanks for jumping on again.
+[00:00:06] Ravi: Yeah, hi. Sorry, I've got the proposal open here somewhere. Give me a second. Okay. Got it.
+[00:00:13] Sam: Great. So the purpose today is to go through the proposal we sent, confirm what's in, and pick up anything that's changed since we spoke.
+[00:00:21] Ravi: Yes. A few things have changed actually. Good things and, um, one annoying thing.
+[00:00:27] Sam: Let's hear the annoying thing first.
+[00:00:29] Ravi: The expo. The Pune expo got moved. It's now the first week of November, not the third. So I don't have six weeks anymore. From today it's four weeks. Four weeks, Sam.
+[00:00:42] Dana: Okay. That's a significant change. Four weeks from today.
+[00:00:46] Ravi: I know, I know. I didn't move it, the organisers did. Can it still be done?
+[00:00:51] Sam: The configuration-heavy items, the location and price filters and the mobile fixes, those we can likely still do in four weeks because we found most of them are settings in Brilliant Directories, like we hoped. The custom bits are what's at risk.
+[00:01:06] Ravi: Which brings me to the AI thing.
+[00:01:08] Sam: Go on.
+[00:01:10] Ravi: Drop it. Drop the AI search. I showed the partners the estimate and they laughed. Not in a mean way. But they said, Ravi, our agents can't even fill in the Area field, you want AI? So, remove it. Completely. Not phase two, not maybe. Gone.
+[00:01:29] Dana: Removing the AI natural language search from scope entirely.
+[00:01:33] Ravi: Yes. Gone.
+[00:01:35] Sam: That actually helps the four week timeline a lot.
+[00:01:38] Ravi: Good. Now the good thing. Meera, you remember Meera, she had an idea and for once I agree with her. Saved searches. A buyer searches for "two bedroom in Baner under eighty lakhs", and they can save that search, and when a new listing matches, they get an email. An alert. Like the big portals do.
+[00:02:00] Sam: Saved search alerts. So the user saves their filter criteria and gets notified of new matches.
+[00:02:06] Ravi: Exactly that. Email is fine. No SMS, no app, just email.
+[00:02:11] Dana: Is this a must-have, Ravi? Because it's new and it's custom, and we're now at four weeks.
+[00:02:17] Ravi: It's a must. The partners loved it. It's the thing that will make agents stay with us. If something has to give, give on the map view.
+[00:02:27] Sam: Okay, so the map view of results drops in priority to make room for saved search alerts.
+[00:02:33] Ravi: Yes, map view can wait. Keep it on the list but it's not for the expo.
+[00:02:38] Dana: Map view moves to could-have, post-expo. Saved search alerts added as must-have.
+[00:02:44] Ravi: Right.
+[00:02:46] Sam: How often should the alerts go out? Instantly when a listing is added, or a daily digest?
+[00:02:51] Ravi: Daily is fine. Actually, instant would be better. No, daily. Daily. Agents post a lot of junk and then fix it, I don't want buyers getting ten emails.
+[00:03:03] Dana: Daily digest. Noted.
+[00:03:05] Ravi: And the buyer has to be logged in to save a search, I assume?
+[00:03:09] Sam: Typically yes. Which means buyers need accounts. Do buyers have accounts on your site today, or only agents?
+[00:03:16] Ravi: Only agents pay. Buyers, hmm. I think they can register for free? There's a free thing. I'm not sure anyone does.
+[00:03:25] Sam: Okay, that's an open question we'd need to settle. Whether a free buyer membership level exists and whether saved searches hang off that.
+[00:03:33] Dana: Open question: buyer accounts for saved searches.
+[00:03:37] Ravi: Fine. Hang on. (muffled) Yes, the Kothrud one, send it to me. Okay sorry.
+[00:03:46] Sam: Let's go through the proposal items quickly so we're aligned. Location filter by city and locality. Still in?
+[00:03:52] Ravi: In. And actually, small change, can the locality filter also include the nearby localities? Like if I pick Baner it also shows Balewadi? They're basically the same place.
+[00:04:04] Sam: Grouping nearby localities. That changes the filter from a simple field match to something with a mapping of localities. Small but it's a change.
+[00:04:12] Ravi: Is it expensive?
+[00:04:14] Sam: Probably not huge, but it's custom logic rather than a pure setting. We'd re-estimate it.
+[00:04:19] Ravi: Okay, do it if it's cheap. If it's not, leave it as simple.
+[00:04:23] Dana: Location filter modified: nearby locality grouping, if low effort.
+[00:04:28] Sam: Price range filter with lakhs and crores formatting. Still in?
+[00:04:32] Ravi: In. No change.
+[00:04:34] Sam: Bedrooms filter, could have.
+[00:04:36] Ravi: Still could have. If it's free, do it.
+[00:04:39] Sam: Mobile view fixes including the sticky Contact Agent button.
+[00:04:43] Ravi: In. Very in. My nephew called, by the way, he said he "may have" added some CSS. So, yeah.
+[00:04:51] Sam: (laughs) We found it. We'll clean it up.
+[00:04:54] Ravi: Good.
+[00:04:56] Sam: Saved favourites, the Meera one from last time.
+[00:04:59] Ravi: You know what, since we're doing saved searches, is favourites basically the same thing?
+[00:05:04] Sam: Related but different. Favourites is saving a specific listing. Saved search is saving criteria. They might share some plumbing like the buyer account.
+[00:05:13] Ravi: Leave favourites as could have. Saved searches is the priority.
+[00:05:17] Dana: Favourites unchanged, could have.
+[00:05:18] Sam: Quick one on the saved search alert emails. Do you have a view on how they should look? Plain text, or branded like your newsletter?
+[00:05:24] Ravi: Branded. With the listing photo, price, the area, and a button to view it. Like the big portals. But don't spend a week on it. Simple and branded.
+[00:05:34] Dana: Branded daily digest email with photo, price, locality and a link. Noted as part of the saved search item.
+[00:05:39] Ravi: And unsubscribe. Legal told me we need an unsubscribe link on anything automated.
+[00:05:44] Sam: Standard. Every alert email gets an unsubscribe and a manage-my-searches link.
+[00:05:48] Ravi: Good. Also, totally unrelated, are you two coming to the expo? We have a booth. Free samosas.
+[00:05:54] Dana: (laughs) If the site is live, we'll be there.
+[00:05:57] Ravi: Deal. Oh, and the agents, Meera wants a training session on the new filters so the agents fill in the fields properly. Is that something you do?
+[00:06:05] Sam: We can do a one-hour walkthrough for agents at the end. Let's write it down as a deliverable, it's small.
+[00:06:10] Dana: Agent training session, one hour, added.
+[00:06:13] Ravi: Perfect. Meera will be thrilled. She's never thrilled.
+[00:05:19] Ravi: Now, one more thing, and this is not really your thing but I'll ask. Our logo. It's terrible. My nephew made it in Paint. Can your designer do a new logo while they're in there?
+[00:05:33] Sam: We can quote a logo redesign separately, but I want to be clear, it's not part of this project. It's a branding job, not a directory configuration job, and it would eat into the four weeks.
+[00:05:44] Ravi: Yeah, yeah. I figured. Just note it somewhere. Maybe after the expo.
+[00:05:49] Dana: Noting logo redesign as a separate request, out of this project's scope.
+[00:05:54] Ravi: Fine.
+[00:05:56] Sam: Budget. With the AI gone and saved search added, we're going to re-estimate. Are you still at four thousand?
+[00:06:03] Ravi: Four is still the number. The partners said four. Without the AI it should be easier, no?
+[00:06:09] Sam: Saved search alerts is real custom work. It may land around the same. We'll come back with the number.
+[00:06:15] Ravi: Okay. But four is the number.
+[00:06:18] Dana: Budget unchanged at four thousand.
+[00:06:21] Sam: And the no-downtime constraint still stands?
+[00:06:24] Ravi: Always. Especially before the expo.
+[00:06:27] Sam: Let me read back the changes. Deadline changed from six weeks to four weeks from today, because the expo moved. AI natural language search removed from scope completely. Saved search alerts with daily email digest added as a must-have. Map view of results moved from should-have to could-have, post-expo. Location filter modified to optionally group nearby localities, only if low effort. Price filter, bedrooms, mobile fixes and favourites unchanged. A one-hour agent training session on the new filters added. Logo redesign requested, out of scope for this project, to be quoted separately. Budget unchanged at four thousand. Open question on buyer accounts for saved searches.
+[00:07:08] Ravi: That's it. You're very organised.
+[00:07:11] Sam: Dana is. Decisions?
+[00:07:14] Ravi: Decided: AI is out. Decided: saved search alerts is in. Decided: four weeks. The locality grouping, depends on cost.
+[00:07:23] Dana: Got it. We'll send a revised proposal with a change summary by Wednesday.
+[00:07:28] Ravi: Wednesday is good. And the logo thing, just a number, no rush.
+[00:07:32] Sam: Separately, yes. Thanks Ravi.
+[00:07:35] Ravi: Thanks. Don't break anything. Four weeks!
+[00:07:38] Sam: Four weeks. Bye.

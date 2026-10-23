@@ -1,0 +1,90 @@
+Discovery call - Local Fitness Directory
+Attendees: Priya (client, Local Fitness Directory), Sam (consultant), Dana (project manager)
+Recorded 2026-10-08
+
+[00:00:03] Dana: Recording is on. Priya, thanks for making time.
+[00:00:07] Priya: Of course. I've got about forty minutes, then I have to pick up my kid, so let's be efficient.
+[00:00:12] Sam: Perfect. Tell us about Local Fitness Directory.
+[00:00:16] Priya: Sure. We list gyms, yoga studios, personal trainers, that kind of thing, in Bangalore and Hyderabad. Trainers and studios pay us for a listing, there's a free tier and two paid tiers. We also sell, um, featured placements. Like a boost. And lately we started selling event tickets for fitness workshops through the site, which is new and honestly a bit chaotic.
+[00:00:44] Sam: Okay. And the site runs on Brilliant Directories?
+[00:00:47] Priya: Yes, about a year. We're on the, I think it's the middle plan. Doesn't matter.
+[00:00:53] Sam: What's the problem you want to solve?
+[00:00:55] Priya: Three things. Checkout, emails, and payments. Let me take them one by one.
+[00:01:01] Dana: Please.
+[00:01:02] Priya: Checkout. When a trainer signs up for a paid plan, the checkout page asks for way too much. Company name, tax ID, fax number, who has a fax. Half of them drop off. I want a short checkout. Name, email, phone, card. Done.
+[00:01:20] Sam: So remove fields from the checkout form.
+[00:01:23] Priya: Remove fields. And also, the order summary on the right side, it shows the plan name but not what's included. I want it to show, like, three bullet points of what they get.
+[00:01:34] Dana: Checkout form simplified, order summary shows plan benefits. Is the simplified form a must?
+[00:01:40] Priya: Must. The benefits bullets, should. Nice to have but it would help.
+[00:01:45] Sam: Just so you know, the signup form fields in Brilliant Directories are configurable from the admin, you can hide fields. So that part might be a setting. The order summary layout, I'm less sure, that may need template work.
+[00:01:59] Priya: Okay. Whatever's fastest.
+[00:02:02] Sam: Second thing, emails?
+[00:02:04] Priya: Yes. When someone buys something, a plan or a featured boost or a workshop ticket, I want an email. To them, obviously, confirming the order. But also to me. Right now I find out about sales by logging into the admin and refreshing. It's ridiculous.
+[00:02:22] Dana: So two emails: a customer confirmation and an admin notification, per order.
+[00:02:27] Priya: Exactly. And the customer one needs to look nice, with our logo and the order details. And for workshop tickets it should have the date and venue of the workshop.
+[00:02:38] Sam: Does the product send any emails today when an order happens?
+[00:02:42] Priya: There's some default thing. It's ugly and I don't think it goes to me. I actually don't know. Can you check?
+[00:02:49] Sam: We'll check the docs. My recollection is there are transactional email templates you can edit and there's an admin notification setting, but I'm not going to promise until we've verified it.
+[00:03:00] Priya: Please verify. I've been burned before. The last guy said "oh yeah easy" about everything.
+[00:03:06] Dana: Noted. Order confirmation email to customer, must have, branded with order details. Admin notification email per order, must have. Workshop details in the ticket confirmation, must have for tickets.
+[00:03:18] Priya: Yes.
+[00:03:20] Sam: And third, payments.
+[00:03:22] Priya: Payments. So right now we take payments through PayPal and it's, honestly, PayPal is a pain in India. Half my customers don't have it. I want Razorpay. Everyone here has UPI, Razorpay does UPI, cards, net banking, everything.
+[00:03:40] Sam: Does Brilliant Directories support Razorpay?
+[00:03:43] Priya: That's what I'm asking you!
+[00:03:45] Sam: (laughs) Fair. I'll be honest, I don't think Razorpay is one of the built-in gateways. Stripe is, I'm fairly sure Stripe is built in. Razorpay would likely be custom integration work. But let's verify both against the documentation before we say anything.
+[00:04:02] Priya: Okay so if Razorpay is custom, how much more? Because Stripe also does UPI now in India I think? Maybe? I'm not sure.
+[00:04:12] Sam: I'm not certain about Stripe's UPI support for your account type. That's a question for Stripe rather than for the platform.
+[00:04:19] Priya: Hmm. Okay. Put both down. Razorpay is what I want. Stripe is the fallback if Razorpay is too expensive.
+[00:04:27] Dana: Razorpay payment gateway integration, must have, pending feasibility. Stripe as fallback, should have.
+[00:04:34] Priya: And whichever one, I need it to work for the subscription plans, not just one-off payments. The monthly plans have to renew automatically.
+[00:04:43] Sam: Recurring billing through the new gateway. That's an important detail, thanks.
+[00:04:48] Priya: Yes. Oh my god, one more. Sorry. Refunds. When I refund someone, can it happen from the admin? Right now I have to go into PayPal separately.
+[00:04:58] Sam: Refund from admin through the gateway. Is that a must?
+[00:05:02] Priya: Could have. I only do a few a month.
+[00:05:05] Dana: Got it.
+[00:05:07] Priya: Hold on. (background noise) Sorry, that's my husband, he's asking where the car keys are. They're on the hook! Like always! Sorry.
+[00:05:17] Sam: (laughs) No worries. While you're back, can I ask about the workshop tickets? Is that using the built-in product or something custom?
+[00:05:25] Priya: It's using, um, I think it's the "products" thing in the admin. Someone set it up. Each workshop is a product with a price. It works but the confirmation is just a generic "thanks for your order".
+[00:05:38] Sam: Okay. So the workshop-specific email content would need the product to carry the date and venue somewhere.
+[00:05:44] Priya: Can't you just put it in the product description?
+[00:05:47] Sam: Possibly. That's one of those things we'd need to confirm, whether the email template can pull from the description.
+[00:05:53] Dana: Marking as needs clarification.
+[00:05:56] Priya: Fine.
+[00:05:56] Dana: Before budget, Priya, you mentioned featured placements, the boosts. Do those go through the same checkout?
+[00:05:59] Priya: Same checkout, yes. Same ugly form. A trainer buys a boost for a week, fills in the fax number, I'm not joking, and then gets the generic email. So everything I said about checkout and emails applies to boosts too. Plans, boosts, tickets. Three product types, one checkout, one set of emails.
+[00:06:17] Sam: Good, that's a useful clarification. Same fix covers all three.
+[00:06:20] Priya: And can the admin email tell me which type it was? Like, subject line "New plan order" versus "New boost order". Otherwise I'll have to open every one.
+[00:06:29] Dana: Order type in the admin notification subject line. Should have?
+[00:06:32] Priya: Should. Okay, sorry, I keep adding things. This is why I needed this call.
+[00:06:36] Sam: That's what it's for.
+[00:05:58] Sam: Budget and timing?
+[00:06:01] Priya: Budget, I don't have a fixed number. I'd say if it's under three thousand I'll just say yes. Above that I need to think. Timing, the payments thing is urgent because PayPal is literally losing me customers. I'd want that in, like, three weeks? The emails and checkout, within two months is fine.
+[00:06:23] Dana: So two phases maybe. Payments first, three weeks. Checkout and emails after.
+[00:06:28] Priya: Yes, if that's cheaper or faster, yes.
+[00:06:31] Sam: Any constraints? Things we shouldn't touch?
+[00:06:34] Priya: Don't change the listing pages. Trainers are used to them. And don't make me migrate to a different plan or platform, I'm not doing that again.
+[00:06:44] Dana: Stay on the current Brilliant Directories plan, listing pages untouched.
+[00:06:49] Priya: Also, I don't want anything that requires me to maintain a server or whatever. If Razorpay needs some separate thing running, I don't want it. I'm one person.
+[00:06:59] Sam: Understood. Low-maintenance solution. That's a real constraint for how we'd do the integration.
+[00:07:05] Priya: Yes.
+[00:07:07] Sam: Questions from us. Do you have a Razorpay account already?
+[00:07:11] Priya: Yes, business account, verified. I use it for offline stuff.
+[00:07:15] Sam: Do you have a Stripe account?
+[00:07:17] Priya: No.
+[00:07:18] Sam: And your current customers on PayPal subscriptions, do they need to move over to the new gateway?
+[00:07:24] Priya: Oh. Hmm. I hadn't thought about that. There's maybe sixty of them. Can they just stay on PayPal until they renew?
+[00:07:33] Sam: Possibly. That's an open question for us to work out. Migrating existing subscribers can be fiddly.
+[00:07:39] Dana: Open question: migration of existing PayPal subscribers.
+[00:07:43] Priya: Add it. I don't want to lose them.
+[00:07:46] Sam: Who approves the design of the email templates?
+[00:07:49] Priya: Me. Just me. Send me a screenshot and I'll say yes or no in an hour.
+[00:07:54] Dana: Great.
+[00:07:56] Sam: Let me read it back. Simplify the checkout form to name, email, phone, card, must have, likely a setting. Order summary shows plan benefits, should have. Customer order confirmation email, branded, with order details, must have. Admin notification email per order, must have. Workshop ticket confirmation includes date and venue, must have, needs clarification on where the data lives. Razorpay integration with recurring billing, must have, feasibility to verify. Stripe as fallback, should have. Refunds from admin, could have. Three week target for payments, two months for the rest. Budget comfortable under three thousand. No changes to listing pages, no new platform, no self-hosted components. Open question on migrating sixty PayPal subscribers.
+[00:08:38] Priya: That's everything. You're good at this.
+[00:08:41] Sam: (laughs) Thank you. Decisions today?
+[00:08:44] Priya: Decided: we're moving off PayPal as the primary gateway. Decided: the checkout gets simplified. Everything else, show me the numbers.
+[00:08:53] Dana: Noted.
+[00:08:55] Priya: Okay I have to run. Send me the proposal and I'll read it tonight.
+[00:08:59] Sam: Will do. Thanks Priya.
+[00:09:01] Priya: Bye! Keys are on the hook!

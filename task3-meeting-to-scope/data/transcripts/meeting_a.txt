@@ -1,0 +1,91 @@
+Discovery call - Sunrise Property Listings
+Attendees: Ravi (client, Sunrise Property Listings), Sam (consultant), Dana (project manager)
+Recorded 2026-10-06
+
+[00:00:04] Sam: Okay I think we're recording now. Ravi, can you hear us alright?
+[00:00:08] Ravi: Yeah, yeah, I can hear you. Sorry I was on another call, the broker from Pune, you know how it is.
+[00:00:14] Sam: No problem at all. So just to set the scene, Dana is here with me, she'll be running the project side if we go ahead. Dana, say hi.
+[00:00:21] Dana: Hi Ravi, nice to finally meet you.
+[00:00:23] Ravi: Hi Dana. Nice to meet you too. Okay so, where do you want me to start?
+[00:00:28] Sam: Maybe just tell us about the site as it is today and what's bugging you.
+[00:00:33] Ravi: Right. So Sunrise Property Listings, we've been on Brilliant Directories for, um, about two years now. We list residential properties mostly, some commercial, across three cities. Agents pay us a monthly fee to list. We've got, I want to say, four hundred and something listings live right now. Business is okay. But the site itself, honestly, the site is letting us down.
+[00:01:02] Sam: In what way?
+[00:01:04] Ravi: The search. The search is the big one. People come to the homepage, they type something, and they get, like, everything. Or nothing. There's no way to say "I want a two bedroom in Baner under eighty lakhs". You just get a list.
+[00:01:20] Dana: So when you say search, do you mean the search bar itself or the results page?
+[00:01:25] Ravi: Both? I think both. Honestly I'm not technical, I just know agents complain. One of them, Meera, she said her buyers give up after two clicks.
+[00:01:36] Sam: Okay. So let's break that down a bit. You mentioned location and price. Are those the two main filters?
+[00:01:42] Ravi: Those are the main ones, yes. Location first. We need people to filter by city and ideally by locality, like area within the city. And then price, a range, minimum maximum, that kind of thing.
+[00:01:56] Sam: And bedrooms?
+[00:01:57] Ravi: Bedrooms would be nice. But if I had to pick, location and price. Those are must-haves. Bedrooms is, you know, nice to have.
+[00:02:06] Dana: Got it. I'm writing these down. Location filter by city and locality, must have. Price range filter, must have. Bedrooms, nice to have.
+[00:02:14] Ravi: Yes. Oh and the price thing, our prices are in lakhs and crores, not in dollars, so the slider or whatever needs to make sense for that. Last time someone showed me a demo and it said "$50,000 to $100,000" and I was like, no.
+[00:02:31] Sam: Noted. Local currency formatting.
+[00:02:34] Ravi: Hang on, sorry, one second. (muffled) No, tell him I'll call back after four. Sorry. Okay. Where were we.
+[00:02:46] Sam: Search filters. I want to flag something early, Ravi. A lot of what you're describing, filtering by location and by price, Brilliant Directories actually has settings for that already. There's a search module where you can turn on fields as filters. So some of this might not be custom development at all, it might be configuration.
+[00:03:06] Ravi: Really? Then why hasn't it been done?
+[00:03:09] Sam: Honestly, probably because nobody set it up. It's not obvious in the admin. But I don't want to promise until we've checked the exact setup for your data, because your price field might be a custom field, and that changes things.
+[00:03:22] Ravi: Okay. Well if it's just settings then great, cheaper for me.
+[00:03:26] Dana: We'll mark it as something to verify against the documentation.
+[00:03:30] Sam: What else?
+[00:03:32] Ravi: Mobile. The mobile view is bad. I open it on my phone and the listing photos are tiny, the menu covers half the screen, and the filters, well there are no filters, but the sort dropdown goes off the edge. Seventy percent of our traffic is mobile, Sam. Seventy.
+[00:03:52] Sam: Is that from Google Analytics?
+[00:03:54] Ravi: From the Brilliant Directories stats page, I think. Or Analytics. Something like that. It's a lot anyway.
+[00:04:00] Dana: Do you have a specific phone or browser where it's worst?
+[00:04:04] Ravi: Everything? My Samsung, Meera's iPhone. It just looks like a desktop site squeezed down.
+[00:04:11] Sam: Okay. The themes are responsive out of the box so again some of this might be theme settings or custom CSS that someone added. Did anyone customise the design before?
+[00:04:22] Ravi: My nephew did some things. Two years ago. He's in Canada now.
+[00:04:27] Sam: (laughs) Right. So we'd want to audit what he changed.
+[00:04:31] Ravi: Please don't break anything.
+[00:04:33] Dana: We won't. Okay, mobile view improvements, must have, needs audit of existing customisation.
+[00:04:40] Ravi: And then, this is the one I'm not sure about. I keep reading about AI. Everyone's doing AI. Can we have some AI? Like, the buyer types "sunny flat near a good school with parking" and it just finds it.
+[00:04:56] Sam: So natural language search.
+[00:04:58] Ravi: Yes. Maybe. I don't know. Is that expensive?
+[00:05:02] Sam: It can be. It's definitely not a built-in setting. It would be custom development, probably involving an external AI service, and it depends a lot on how clean your listing data is. If agents don't fill in "parking: yes" then the AI can't find parking.
+[00:05:19] Ravi: The data is... not clean.
+[00:05:22] Sam: Right. So I'd put that in a "maybe, phase two" bucket unless you feel strongly.
+[00:05:27] Ravi: Let's keep it on the list for now. Put it as a maybe. I want to see what it would cost at least.
+[00:05:33] Dana: Okay, AI natural language search, unclear, cost estimate requested.
+[00:05:38] Ravi: Also, the map. Can the results show on a map?
+[00:05:42] Sam: Map view of results. Is that a must?
+[00:05:45] Ravi: Should have. Buyers like maps. Not must.
+[00:05:49] Dana: Got it.
+[00:05:51] Sam: Let's talk about constraints. Timeline, budget, anything you can't live without.
+[00:05:56] Ravi: Timeline. We have a property expo in Pune on, hmm, it's the third week of November. I want the new search live before that. So, six weeks from now? Roughly six weeks.
+[00:06:10] Dana: Six weeks is tight but okay for the configuration-heavy items. The AI piece would not fit in six weeks.
+[00:06:17] Ravi: Fine. Six weeks for the search and mobile. AI whenever.
+[00:06:21] Sam: Budget?
+[00:06:23] Ravi: I'd like to stay under, let's say, four thousand. Maybe five if the AI thing is included and it's worth it. But four for the basics.
+[00:06:33] Sam: Okay. That's useful.
+[00:06:36] Ravi: And one more thing, agents need to still be able to log in and edit their listings while you're working. We can't have downtime, the agents will kill me.
+[00:06:46] Dana: No downtime during the project. Understood. Most of these are admin-side changes anyway.
+[00:06:52] Ravi: Good. Oh, and Meera asked, can buyers save a property? Like a favourites thing?
+[00:06:58] Sam: Favourites or saved listings. Is that from you or from Meera?
+[00:07:02] Ravi: From Meera. I don't care that much. Put it as a maybe.
+[00:07:06] Dana: Saved favourites, could have, unclear.
+[00:07:09] Sam: Just to double check something from earlier, the locality filter. Do you have locality data on the listings today?
+[00:07:16] Ravi: We have a field called "Area". Some agents fill it, some don't.
+[00:07:20] Sam: Okay, so the filter can only be as good as the data. That's an assumption we'll write down.
+[00:07:26] Ravi: Yeah, yeah. I can push the agents to fill it in.
+[00:07:30] Dana: We'd put that down as a client responsibility, getting the Area field populated.
+[00:07:35] Ravi: Fine.
+[00:07:37] Sam: Anything about the listing detail page itself? Photos, contact forms?
+[00:07:41] Ravi: The photos are fine. The contact form works. Don't touch what works.
+[00:07:46] Sam: (laughs) Fair enough.
+[00:07:48] Ravi: Actually, wait. One thing on the detail page. On mobile the "Contact Agent" button is below everything, you have to scroll forever. Can it be at the top on mobile?
+[00:07:59] Dana: Sticky contact button on mobile. Should have?
+[00:08:03] Ravi: Should have. It's part of the mobile thing really.
+[00:08:07] Sam: Okay. Let me read back what we have. Search filters by location, city and locality, must have. Price range filter in local currency format, must have. Bedrooms filter, could have. Mobile view fixes including the contact button placement, must have, after an audit of the existing customisation. Map view of results, should have. AI natural language search, unclear, estimate only. Saved favourites, could have, unclear. Six week deadline for search and mobile driven by the expo. Budget around four thousand, five with AI. No downtime. You'll get agents to fill in the Area field.
+[00:08:48] Ravi: That's it. That's exactly it.
+[00:08:51] Sam: Any decisions you want to lock in today?
+[00:08:54] Ravi: Yes. Location and price filters are definitely happening. And mobile. Those are decided. The rest, send me numbers.
+[00:09:03] Dana: Decided: location and price filters and mobile fixes are in. AI, map, favourites pending numbers.
+[00:09:10] Ravi: And can you send the proposal by Friday? I have a partners meeting Monday.
+[00:09:15] Sam: We can do a draft by Friday. One open question from our side: do you want us to also look at the search results sort order? You mentioned the sort dropdown.
+[00:09:25] Ravi: Only fix it if it's broken on mobile. Don't redesign it.
+[00:09:29] Sam: Got it. Dana, anything else?
+[00:09:32] Dana: Just, Ravi, who on your side signs off? Is that you or the partners?
+[00:09:37] Ravi: Me. The partners just want to see the number.
+[00:09:40] Dana: Perfect.
+[00:09:42] Sam: Okay. We'll check the documentation on what's a setting and what's custom, and come back with the proposal. Thanks Ravi.
+[00:09:49] Ravi: Thanks both. Don't break anything.
+[00:09:52] Sam: We won't. Bye.

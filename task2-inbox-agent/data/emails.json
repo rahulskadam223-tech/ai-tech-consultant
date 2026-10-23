@@ -1,0 +1,502 @@
+[
+ {
+  "id": 1,
+  "from": "maria.lopez@bayareahomepros.com",
+  "subject": "How do I change the logo?",
+  "body": "Hi there,\n\nWe just rebranded and I need to swap out the logo in the header of our directory site. I found the Design Settings but I can't see where the logo upload is. Can you point me to it?\n\nThanks,\nMaria",
+  "expected_category": "how_to",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 2,
+  "from": "tom@dentistsnearyou.net",
+  "subject": "adding a new membership plan",
+  "body": "hello, i want to add a 3rd membership plan (premium, $49/mo) on top of the free and basic ones we have. where do i do this and will existing members be affected? thx tom",
+  "expected_category": "how_to",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 3,
+  "from": "sandra.k@weddingvendorslist.com",
+  "subject": "Export member list",
+  "body": "Good morning,\n\nIs there a way to export all of our members to a CSV? Our accountant needs the list of paying members with their plan and signup date. I looked under Members but only see individual profiles.\n\nBest regards,\nSandra Kowalski\nWedding Vendors List",
+  "expected_category": "how_to",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 4,
+  "from": "dev.patel88@gmail.com",
+  "subject": "custom domain setup",
+  "body": "Hey, I bought mydirectory.com on GoDaddy. How do I point it to my BD site? Do I need to change the A record or CNAME or what? Sorry I'm not technical at all.",
+  "expected_category": "how_to",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 5,
+  "from": "linda@petsittersofaustin.com",
+  "subject": "Newsletter to all members",
+  "body": "Hi,\n\nI'd like to send a monthly newsletter to all my active members. Where is the email tool and can I use my own template? Also can I schedule it for next Tuesday?\n\nLinda",
+  "expected_category": "how_to",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 6,
+  "from": "greg.h@localroofers.directory",
+  "subject": "Question about Stripe",
+  "body": "Is Stripe supported as a payment gateway? If yes how do i connect it. I already have a stripe account.",
+  "expected_category": "how_to",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 7,
+  "from": "amy.chen@yogastudiosmap.com",
+  "subject": "Google Maps on listing pages",
+  "body": "Hello support,\n\nI want the map to show on each listing page with a pin at the business address. Right now the pages have no map. Do I need a Google API key for this? Where do I enter it?\n\nThank you!\nAmy",
+  "expected_category": "how_to",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 8,
+  "from": "frank.olsen@outlook.com",
+  "subject": "how to approve new members manually",
+  "body": "right now anybody who signs up gets published instantly. i want to review them first before they go live. is there a setting for that",
+  "expected_category": "how_to",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 9,
+  "from": "priya@findatutor.co",
+  "subject": "Changing the search filters",
+  "body": "Hi team,\n\nOur search page filters by city and category. I want to add a filter for 'subject taught' which is a custom field we created. How do I make a custom field searchable?\n\nMany thanks,\nPriya",
+  "expected_category": "how_to",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 10,
+  "from": "jason.m@carolinaplumbers.com",
+  "subject": "Members can't log in since yesterday",
+  "body": "Starting yesterday afternoon several members told me they get 'invalid credentials' when logging in even with the right password. I reset one myself and it still fails. Nothing changed on our side. This is urgent, we have 300 members.",
+  "expected_category": "troubleshooting",
+  "risk": "medium",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 11,
+  "from": "nicole.b@hairsalonsdirectory.com",
+  "subject": "Images not uploading",
+  "body": "Hi, when I try to upload a photo to a listing I get a spinning wheel forever and then nothing. Tried Chrome and Safari. The file is a 2MB jpg. What's wrong?",
+  "expected_category": "troubleshooting",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 12,
+  "from": "oscar.r@mexicanrestaurantsfinder.com",
+  "subject": "SSL warning on my site",
+  "body": "Visitors see 'Your connection is not private' on our site since we switched to the custom domain last week. The old subdomain works fine. Did I miss a step with the certificate?",
+  "expected_category": "troubleshooting",
+  "risk": "medium",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 13,
+  "from": "beth@mountainrealtors.org",
+  "subject": "emails going to spam",
+  "body": "All of our system emails (welcome, password reset etc) are landing in spam for gmail users. We use our own domain for the from address. What do we need to set up? SPF? DKIM? I have no idea how to do this.",
+  "expected_category": "troubleshooting",
+  "risk": "medium",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 14,
+  "from": "kevin.t@fitnesstrainershub.com",
+  "subject": "Search returns nothing",
+  "body": "the search on the homepage returns 0 results for everything even though we have 80 listings. was working last week. i didnt touch anything i swear lol. help",
+  "expected_category": "troubleshooting",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 15,
+  "from": "helen.w@seniorcarelocator.com",
+  "subject": "PayPal payments failing",
+  "body": "Hello,\n\nThree members tried to upgrade to the paid plan this week and all three got an error at the PayPal step. One sent me a screenshot saying 'Transaction could not be completed'. Our PayPal account is in good standing. Is something misconfigured?\n\nHelen Wright",
+  "expected_category": "troubleshooting",
+  "risk": "medium",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 16,
+  "from": "marco@italianchefsnetwork.com",
+  "subject": "Mobile layout broken",
+  "body": "On phones the header menu overlaps the hero image and the buttons are cut off. Desktop looks fine. I added some custom CSS last month, could that be it? How do I find out?",
+  "expected_category": "troubleshooting",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 17,
+  "from": "rachel.g@craftfairvendors.com",
+  "subject": "Duplicate listings appearing",
+  "body": "Hi, after I imported a spreadsheet of 200 vendors, about 40 of them show up twice on the site. How do I find and remove the duplicates without deleting the originals?",
+  "expected_category": "troubleshooting",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 18,
+  "from": "steve.n@homeinspectorsusa.com",
+  "subject": "Re: slow site ticket from last week - any progress?",
+  "body": "Hi, following up on the ticket I opened last Tuesday about pages taking 10+ seconds to load. Your colleague said the hosting team would investigate. It's been a week and it's still slow. Can you let me know where this stands?",
+  "expected_category": "follow_up",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 19,
+  "from": "ceo@globalconsultantsdirectory.com",
+  "subject": "Custom integration with our CRM",
+  "body": "Hello,\n\nWe run a directory of 2,000 consultants and want new paid signups pushed automatically into HubSpot, with plan and payment status. We'd also like a nightly sync back the other way for cancellations. Is this something your team can build for us, and what would the process look like?\n\nRegards,\nDaniel Osei, CEO",
+  "expected_category": "project_request",
+  "risk": "medium",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 20,
+  "from": "jen@localfoodtrucks.app",
+  "subject": "Mobile app for our directory",
+  "body": "We want a branded iOS/Android app that mirrors our directory with push notifications when a food truck checks in nearby. Can you build this or recommend a partner? Budget is flexible for the right solution.",
+  "expected_category": "project_request",
+  "risk": "medium",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 21,
+  "from": "robert.f@lawyersinmaine.com",
+  "subject": "Need a custom booking feature",
+  "body": "Hi, our members (attorneys) want clients to book 30 min consultations directly from their profile page, with calendar sync and a deposit payment. Nothing in the marketplace does exactly this. Can this be developed as a custom project? Timeline?",
+  "expected_category": "project_request",
+  "risk": "medium",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 22,
+  "from": "ops@nationalcontractorsnet.com",
+  "subject": "Migrating 15k listings from WordPress",
+  "body": "We're moving off a WordPress/GeoDirectory site with about 15,000 listings, 3,000 paying members with active subscriptions, and 10 years of reviews. We need a full migration plan including redirects for SEO. Who do we talk to about scoping this?",
+  "expected_category": "project_request",
+  "risk": "high",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 23,
+  "from": "sophie.l@parisboutiques.fr",
+  "subject": "Multi-language version of our site",
+  "body": "Bonjour, we need the whole site available in French and English with a language switcher, and member profiles translated. Is this a project your services team takes on? We'd like a proposal.",
+  "expected_category": "project_request",
+  "risk": "medium",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 24,
+  "from": "carl.b@carlbrownphotography.com",
+  "subject": "cancel my subscription",
+  "body": "please cancel my account effective immediately and refund this months charge. i never really used it. account email is this one.",
+  "expected_category": "refund_cancel",
+  "risk": "medium",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 25,
+  "from": "tina.v@yahoo.com",
+  "subject": "CHARGED TWICE!!!",
+  "body": "I was charged $149 twice on the 1st of this month!!! I only have ONE site. I want the second charge refunded TODAY or I'm disputing it with my bank. This is ridiculous.",
+  "expected_category": "refund_cancel",
+  "risk": "high",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 26,
+  "from": "james.w@wholesalebuyersguide.com",
+  "subject": "Refund request - didn't realize it renewed",
+  "body": "Hi,\n\nMy annual plan auto-renewed on Monday for $1,188 but we decided back in the summer to shut the directory down. I missed the reminder email. Would it be possible to refund this renewal? We're happy to close the account right away.\n\nThanks for understanding,\nJames",
+  "expected_category": "refund_cancel",
+  "risk": "medium",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 27,
+  "from": "abby.n@gmail.com",
+  "subject": "downgrade or cancel?",
+  "body": "Hi, money is tight right now. Can I downgrade to a cheaper plan instead of cancelling? If not I'll need to cancel before the next bill on the 15th. Please let me know my options.",
+  "expected_category": "refund_cancel",
+  "risk": "medium",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 28,
+  "from": "mike.d@mikesdirectory.biz",
+  "subject": "want my money back",
+  "body": "signed up 5 days ago, the thing is way more complicated than the sales video made it look. i want a full refund under your guarantee. how do i do that",
+  "expected_category": "refund_cancel",
+  "risk": "medium",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 29,
+  "from": "laura.p@eventplannersdirectory.com",
+  "subject": "Your 'support' is a joke",
+  "body": "I have opened THREE tickets in two weeks about my broken checkout page and every single time I get a copy-paste answer linking me to an article that does not apply. Meanwhile I am losing signups every day. I pay you $249 a month for this? I want a real person to look at my site and I want to know who I can escalate this to.",
+  "expected_category": "complaint",
+  "risk": "high",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 30,
+  "from": "paul.g@ohiocaterers.com",
+  "subject": "Disappointed with the update",
+  "body": "The latest admin update moved everything around and now simple tasks take me twice as long. Nobody asked us. The old layout was fine. Just wanted you to know some of us are not happy about it.",
+  "expected_category": "complaint",
+  "risk": "low",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 31,
+  "from": "deborah.s@spasandwellness.co",
+  "subject": "Unacceptable downtime",
+  "body": "Our site was down for almost 4 hours on Saturday during our biggest promotion of the year. No status page update, no email, nothing. We lost real money. I expect an explanation and some kind of compensation.",
+  "expected_category": "complaint",
+  "risk": "high",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 32,
+  "from": "ahmed.k@dubaibusinesslist.ae",
+  "subject": "Sales rep promised features that don't exist",
+  "body": "Before I signed up your sales rep told me the platform supports multi-currency billing and Arabic right-to-left layout out of the box. Neither is true. I feel misled and I am considering my legal options. I want this on record.",
+  "expected_category": "complaint",
+  "risk": "high",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 33,
+  "from": "chris.m@bostonmovers.directory",
+  "subject": "Still waiting",
+  "body": "Its been 9 days since I was told someone would call me back about the billing error. Nobody called. I shouldnt have to chase you for this.",
+  "expected_category": "complaint",
+  "risk": "medium",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 34,
+  "from": "founder@techstartupsindex.io",
+  "subject": "Pricing for 5 directory sites",
+  "body": "Hi,\n\nWe're planning to launch five niche directories over the next year. Do you offer agency or multi-site pricing? Please send a quote for 5 sites on your top plan with annual billing.\n\nThanks,\nNina",
+  "expected_category": "quote_request",
+  "risk": "low",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 35,
+  "from": "bill.r@texasranchers.org",
+  "subject": "cost of a custom theme",
+  "body": "how much would it cost to have your designers build us a custom theme that matches our association's branding? we have a style guide. ballpark is fine for now.",
+  "expected_category": "quote_request",
+  "risk": "low",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 36,
+  "from": "procurement@citychamber.gov",
+  "subject": "RFQ: Member directory platform",
+  "body": "Our Chamber of Commerce is requesting quotes for a member directory platform for approx. 1,200 member businesses, including setup, data import, training and 12 months of support. Please provide itemized pricing and your standard SLA by the 30th.",
+  "expected_category": "quote_request",
+  "risk": "medium",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 37,
+  "from": "sam@sam-ventures.com",
+  "subject": "Quote for SEO package + setup",
+  "body": "Can you quote me for the done-for-you setup service plus 3 months of your SEO package? Also is there a discount if I pay upfront?",
+  "expected_category": "quote_request",
+  "risk": "low",
+  "should_escalate": true,
+  "holdout": false
+ },
+ {
+  "id": 38,
+  "from": "karen.j@karenjdesigns.com",
+  "subject": "Re: Ticket #48213 - did this get fixed?",
+  "body": "Hi, following up on my ticket from last Thursday about the broken contact form. I haven't heard anything since the auto-reply. Is someone looking at it?",
+  "expected_category": "follow_up",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 39,
+  "from": "victor.a@autoshopsfinder.com",
+  "subject": "Re: Re: custom field request",
+  "body": "Thanks for the reply last week. You said the fix would be deployed 'in a few days'. Just checking if it went out, I don't see any change on my end yet.",
+  "expected_category": "follow_up",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 40,
+  "from": "emily.r@floristsofportland.com",
+  "subject": "Following up on my question about the newsletter",
+  "body": "Hello again! I emailed on Monday about scheduling the newsletter and got a reply that you'd confirm whether scheduling is possible. Any update? No rush, just want to plan ahead. Thanks :)",
+  "expected_category": "follow_up",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": false
+ },
+ {
+  "id": 41,
+  "from": "harold.b@retiredteachersnetwork.org",
+  "subject": "member photo size",
+  "body": "What size should the member profile photos be? Some of them look blurry and others get cut off at the sides. Is there a recommended pixel size?",
+  "expected_category": "how_to",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": true
+ },
+ {
+  "id": 42,
+  "from": "yuki.t@tokyoenglishteachers.jp",
+  "subject": "Coupon codes for first month free",
+  "body": "Hi! I want to give new members a coupon code for the first month free on the paid plan, valid until end of December. Can I set that up myself? How?",
+  "expected_category": "how_to",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": true
+ },
+ {
+  "id": 43,
+  "from": "gabe.l@coloradobreweriesmap.com",
+  "subject": "Reviews not showing up",
+  "body": "A member told me a customer left a review 2 days ago but it's not on their profile. I checked the admin and I don't see it pending anywhere either. Where do reviews go? Is there moderation I turned on by accident?",
+  "expected_category": "troubleshooting",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": true
+ },
+ {
+  "id": 44,
+  "from": "monica.s@nannyagencieslist.com",
+  "subject": "Password reset email never arrives",
+  "body": "Hi, I'm locked out of my admin account. I click forgot password, it says email sent, nothing arrives (checked spam). Tried 4 times. I need to get in today to publish a promo.",
+  "expected_category": "troubleshooting",
+  "risk": "medium",
+  "should_escalate": false,
+  "holdout": true
+ },
+ {
+  "id": 45,
+  "from": "director@ukarchitectsregistry.co.uk",
+  "subject": "Custom verification workflow",
+  "body": "We need every architect who signs up to upload a licence document which our staff verifies before the profile goes live, with an automated reminder if they don't upload within 7 days and a 'Verified' badge afterwards. Could your team build this? Please let us know how to proceed.",
+  "expected_category": "project_request",
+  "risk": "medium",
+  "should_escalate": true,
+  "holdout": true
+ },
+ {
+  "id": 46,
+  "from": "danny.o@hotmail.com",
+  "subject": "cancel",
+  "body": "cancel my account. dont want it anymore. and dont charge me again.",
+  "expected_category": "refund_cancel",
+  "risk": "medium",
+  "should_escalate": true,
+  "holdout": true
+ },
+ {
+  "id": 47,
+  "from": "irene.c@irenecoaching.com",
+  "subject": "Extremely frustrated",
+  "body": "This is the third time my members' payments have been marked as failed when their cards are fine. Every time I have to apologize to MY customers for YOUR system. I'm tired of it. If this isn't fixed properly this week I'm moving to a competitor and telling everyone in my network why.",
+  "expected_category": "complaint",
+  "risk": "high",
+  "should_escalate": true,
+  "holdout": true
+ },
+ {
+  "id": 48,
+  "from": "owner@miamiboatcharters.com",
+  "subject": "Price for premium onboarding",
+  "body": "Saw you offer a premium onboarding service. How much is it and what exactly is included? We'd want it done before the start of the season in March.",
+  "expected_category": "quote_request",
+  "risk": "low",
+  "should_escalate": true,
+  "holdout": true
+ },
+ {
+  "id": 49,
+  "from": "nathan.p@veterinariansdirectory.com",
+  "subject": "Re: domain transfer - any news?",
+  "body": "Hi, checking in on the domain transfer we discussed two weeks ago. You mentioned the DNS change would propagate within 48 hours but the site still shows the old subdomain. Can someone check please?",
+  "expected_category": "follow_up",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": true
+ },
+ {
+  "id": 50,
+  "from": "wendy.h@wendyhomes.realty",
+  "subject": "Can I hide the member count?",
+  "body": "Our homepage shows 'Browse 23 members' and honestly it looks a bit sad while we're still growing lol. Is there a way to hide that number or the whole stats bar until we have more?",
+  "expected_category": "how_to",
+  "risk": "low",
+  "should_escalate": false,
+  "holdout": true
+ }
+]
