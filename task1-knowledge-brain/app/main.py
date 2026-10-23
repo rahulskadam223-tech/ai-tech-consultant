@@ -30,6 +30,8 @@ class QueryResponse(BaseModel):
     status: Literal["answered", "insufficient_evidence"]
     sources: list[Source]
     needs_human: bool
+    model: str | None = None
+    usage: dict[str, int] | None = None  # tokens of the answer call, for evals
 
 
 class EscalationRequest(BaseModel):
@@ -94,14 +96,20 @@ def create_app(services: Services | None = None) -> FastAPI:
             raise HTTPException(502, f"Anthropic API error: {e.message}")
         except TypeError as e:  # SDK raises this when no credentials are configured at all
             raise HTTPException(502, f"No Anthropic credentials, set ANTHROPIC_API_KEY in .env: {e}")
+        usage = getattr(svc.llm, "last_usage", None)
         if answer is None:
             return QueryResponse(
                 answer="The documentation I found doesn't answer this. Escalating to a human expert.",
                 status="insufficient_evidence",
                 sources=sources,
                 needs_human=True,
+                model=svc.settings.answer_model,
+                usage=usage,
             )
-        return QueryResponse(answer=answer, status="answered", sources=sources, needs_human=False)
+        return QueryResponse(
+            answer=answer, status="answered", sources=sources, needs_human=False,
+            model=svc.settings.answer_model, usage=usage,
+        )
 
     @app.post("/escalations", status_code=201)
     async def create_escalation(req: EscalationRequest, request: Request) -> dict[str, object]:

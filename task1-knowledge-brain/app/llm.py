@@ -98,6 +98,7 @@ class ClaudeLLM:
             messages=[{"role": "user", "content": prompt}],
             **request_kwargs(),
         )
+        self.last_usage = {"input_tokens": resp.usage.input_tokens, "output_tokens": resp.usage.output_tokens}
         text = "".join(b.text for b in resp.content if b.type == "text").strip()
         if not text or INSUFFICIENT in text:
             return None
