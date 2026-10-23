@@ -49,6 +49,43 @@ and infrastructure. This log is reconstructed from the sessions and the git hist
    categories (a complaint about a missed call-back vs a follow-up). These are recorded in
    EVALS.md rather than tuned away with special cases.
 
+## Five most useful prompts
+
+Paraphrased from the actual instructions given to Claude Code. What made them work was that each
+one fixed a boundary, not an implementation.
+
+1. **The Task 1 scoped kickoff.** "Make one repo with this structure ... Start with Task 1 only ...
+   Stop after Task 1 is running and show me a curl command to test /query. Don't start Task 2 or
+   3 yet." Listing all three tasks but building one gave the right folder layout, shared `.env`
+   and prompt versioning from the first commit, while the stop condition kept the evening short.
+2. **Guardrails in code for Task 2.** "If Task 1 says insufficient_evidence, the draft must say
+   we will check and get back, never make up an answer. Refund, complaint, quote and legal type
+   emails always need human, no matter what." Saying "no matter what" moved these rules out of
+   the prompt and into `apply_guardrails()`, where the model cannot talk its way around them.
+3. **The was_edited and counter definition.** "was_edited (compare draft text vs final text
+   after strip) ... counter per category of consecutive emails sent without edit. Reset to 0 on
+   edit or reject. When it hits 20 mark auto_send_eligible ... NEVER_AUTO list ... if eligible and
+   later gets 2 edits in a row, turn eligibility off. Log every change of this flag." Precise
+   enough to become pure functions with tests, which is why the learning rule has no ambiguity
+   in the UI.
+4. **The Bedrock yes-or-no check.** "Will this run on Amazon Bedrock with a bearer token, yes or
+   no, and what changes?" Forcing a binary answer surfaced the real differences (inference-profile
+   IDs, the body version older models need, no URL image sources) and produced the small
+   `claude_client.py` switch in each task instead of a rewrite.
+5. **Diff against the approved baseline.** "A follow-up meeting must be compared against the
+   approved requirements, not the previous transcript: report added, modified, removed, out of
+   scope and unchanged, and only re-estimate what changed." This one sentence defined the
+   `ChangeReport` model, the matching module and five of the twenty Task 3 eval checks.
+
+## One time I rejected the AI's answer
+
+I assumed the bigger model would classify emails better and asked for Sonnet as the Task 2
+classifier. The AI built the pipeline with Haiku as specified in the original plan and flagged
+the choice for the eval instead of arguing. The eval on the 40 non-holdout emails settled it:
+Haiku 39/40 (98%) against Sonnet 37/40 (92%), at roughly a third of the cost and half the
+latency. I kept Haiku for classification and Sonnet for drafting, and the numbers are in
+`EVALS.md` so the decision can be re-checked when the dataset grows.
+
 ## Human decisions
 
 - Scope and ordering: one task per session, stop after each, no building ahead.

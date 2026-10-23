@@ -21,6 +21,29 @@
   SQLite drafts + learning              SQLite escalations                                 SQLite projects/versions
 ```
 
+The same picture as a sequence, including the daily refresh and the expert-escalation loop:
+
+```mermaid
+flowchart LR
+    Docs[BD support docs<br/>sitemap.xml] -->|daily POST /ingest/refresh<br/>cron or manual| T1
+    subgraph T1[Task 1 knowledge brain :8001]
+        Crawl[crawl, parse, chunk, embed] --> Chroma[(Chroma chunks)]
+        Crawl --> SQL1[(SQLite pages)]
+        Q[POST /query] --> Chroma
+        Esc[POST /escalations<br/>/escalations/id/resolve] --> Chroma
+    end
+    T2[Task 2 inbox agent :8502] -->|HTTP /query<br/>summary of the email| Q
+    T3[Task 3 meeting-to-scope :8503] -->|HTTP /query<br/>one per requirement| Q
+    Q -->|answered + sources| T2
+    Q -->|answered + sources| T3
+    Q -->|insufficient_evidence<br/>needs_human| Human[Human expert]
+    Human -->|resolve with answer| Esc
+    Esc -->|new chunk, answered next time| Q
+```
+
+Tasks 2 and 3 only ever use `httpx` against the Task 1 URL from `.env`; if Task 1 is down they
+show a red error instead of answering from memory.
+
 Each task has its own SQLite file and virtualenv. One `.env` at the repo root configures all
 three; one `prompts/v1/` folder holds every prompt.
 
@@ -138,6 +161,35 @@ follow-up for the same client, and a second client's discovery call.
   which keeps the two older models and both backends on one code path.
 - **Everything local.** Embeddings are a local sentence-transformers model; storage is SQLite and
   on-disk Chroma. The only network dependencies are the docs site and the Claude API.
+
+## Model choices
+
+Both models are read from `.env`, so the evals could swap them without code changes. The split
+below is what ships, and the numbers are from `EVALS.md` (same 160 cases, two models each).
+
+| Step | Model | Why | Eval evidence |
+|---|---|---|---|
+| Task 1 answers | claude-sonnet-4-5 | Grounded answering from several chunks is where the stronger model earned its cost. | 20/20 vs Haiku 19/20; Haiku abstained on a two-article question. $0.0047 vs $0.0016 per case. |
+| Task 1 screenshot captions | claude-haiku-4-5 | Short descriptions, 40 images, cost matters more than nuance. | Both caption-only eval questions answered by both models. |
+| Task 2 classify | claude-haiku-4-5 | Cheaper, faster and more accurate on this dataset. | 39/40 (98%) vs Sonnet 37/40 (92%); 1.5 s vs 3.5 s median; $0.0007 vs $0.0022 per email. |
+| Task 2 draft reply | claude-sonnet-4-5 | Drafts go to customers; tone and faithfulness to the retrieved docs matter. | Reviewed by a human in the UI; not separately scored. |
+| Task 3 analyst and writer | claude-sonnet-4-5 | Long transcripts, merged requirements and a client-ready proposal. | 19/20 for both models; Sonnet costs 1.5x more per check but the A7 and C4 misses differ, so neither dominates. |
+| Task 3 feasibility | claude-haiku-4-5 | One call per requirement; mostly mapping a Task 1 answer onto four classes. | All requirements received a feasibility entry (check A9) with both analyst models. |
+
+Newer models (`claude-haiku-5-5`, `claude-sonnet-5-5`) exist and are already in the price
+tables of the eval scripts; swapping them is a one-line `.env` change followed by a re-run.
+
+## What I dropped and why
+
+| Dropped | Instead | Why |
+|---|---|---|
+| Crawling all 1,540 articles | 450 pages indexed (`MAX_PAGES`), 1,090 left `pending` | One evening per task. The crawl is resumable, so the rest is one more `make ingest` per budget, not a redesign. |
+| Captioning every screenshot (2,700+ images) | 40 captions (`MAX_IMAGES`), 40 failed, rest `pending` | Captions cost a model call each and most screenshots repeat the same admin pages. The eval shows captions are retrievable, which was the point to prove. |
+| Real email sending in Task 2 | Simulated send: decision saved to SQLite and printed | Mailbox OAuth and deliverability are a project of their own and add risk with no eval value. The learning rule only needs the decision. |
+| Postgres + managed vector DB | SQLite files + on-disk Chroma | Zero setup, one file per task, easy to reset and commit fixtures. Scale is hundreds of pages and tens of emails. |
+| A reranker on top of vector search | Single cosine threshold (0.35) and top-k 6 | Threshold alone gave 100% abstains and 95 to 100% answers on the eval. A cross-encoder would help the two-article case but doubles ingest-time dependencies. |
+| TypeScript for Task 2 | Python for all three tasks | One language, one `.env` loader, one pydantic style and one Streamlit UI pattern across tasks; no second toolchain to set up in a night. |
+| Model-side JSON schemas | JSON asked for in the prompt, validated with pydantic, one retry | Keeps both older models and both backends (Anthropic, Bedrock) on one code path. |
 
 ## Known limitations
 
